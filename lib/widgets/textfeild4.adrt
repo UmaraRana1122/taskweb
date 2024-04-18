@@ -1,0 +1,28 @@
+import 'package:flutter/material.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
+Widget textFeild4(
+  String text2,
+  Final isIcon,
+){
+  return TextField(
+                    decoration: InputDecoration(
+                      contentPadding: EdgeInsets.all(10),
+                      enabled: false,
+                      border: InputBorder.none,
+                      disabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          borderSide: BorderSide(color: Colors.transparent)),
+                      filled: true,
+                      fillColor: Color(0xff1D1D1D),
+                      focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(color: Colors.transparent)),
+                      hintText: text2,
+                      hintStyle: TextStyle(
+                          color: Color(0xff8C8C8C),
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14.sp),
+                     
+                    ),
+                  );
+}
